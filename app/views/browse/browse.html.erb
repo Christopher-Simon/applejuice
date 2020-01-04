@@ -1,5 +1,10 @@
-<% @users.each do |user, index| %>
-<div class="well user-<%= index %>">
-  <p><%= user.first_name %></p>
-</div>
-<% end %>
+<ul id="slides">
+  <% @users.each do |user| %>
+  <div class="slide" data-id="<%= user.id %>">
+    <p><%= user.first_name %></p>
+  </div>
+  <% end %>
+</ul>
+
+<button class="controls" id="previous">no</button>
+<button class="controls" id="next">yes</button>
