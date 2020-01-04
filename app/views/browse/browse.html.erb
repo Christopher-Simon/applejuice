@@ -1,10 +1,12 @@
 <ul id="slides">
-  <% @users.each do |user| %>
-  <div class="slide" data-id="<%= user.id %>">
+  <% @users.each_with_index do |user, i| %>
+  <div class="slide <%= 'showing' if i == 0 %>" data-id="<%= user.id %>">
     <p><%= user.first_name %></p>
   </div>
   <% end %>
 </ul>
 
-<button class="controls" id="decline">no</button>
-<button class="controls" id="approve">yes</button>
+<div id="slide-controls">
+  <button id="decline">no</button>
+  <button id="approve">yes</button>
+</div>

@@ -2,8 +2,8 @@ $(function() {
 
   var $activeSlide = $('#slides .slide:first-child');
 
-  //show first slide
-  $activeSlide.addClass("showing");
+  // show first slide
+  // $activeSlide.addClass("showing");
 
   $("#decline").on("click", function(){
       goToSlide('decline');
