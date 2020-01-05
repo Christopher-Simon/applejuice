@@ -7,6 +7,7 @@
 
  def approve
    #user swipes right
+   logger.debug "User id for matching is #{params[:id]}"
 
    #create like for user
 
