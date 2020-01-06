@@ -1,0 +1,24 @@
+.profile-bar-pic {
+  width: 40px;
+  height: 40px;
+  background: #333;
+  color: #fff;
+}
+
+.profile-thumb{
+  border: 2px solid #fff;
+}
+
+.profile-bar{
+  padding: 10px 30px;
+  background: linear-gradient(262deg, #3a7bd5, #00d2ff);
+
+  a {
+    font-size: 24 px;
+    line-height: 34px;
+  }
+
+  a:hover{
+    text-decoration: none;
+  }
+}
